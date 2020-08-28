@@ -1,0 +1,29 @@
+<div style="margin-top: 50px;">
+</div> 
+<mat-grid-list cols="3" rowHeight="3:2" >
+  <mat-grid-tile *ngFor="let data of result">
+    <mat-card class="example-card" (click)="showDetails(data.id)">
+      <mat-card-header>
+        <mat-card-title>{{data.name}}</mat-card-title>
+        <mat-card-subtitle>{{data.category}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{data.src}} alt="" height="250px" width="200px">
+      <mat-card-content >
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        <span style="margin-left: 350px; font-size: larger;">{{data.price}}</span>
+      <i class="fa fa-cart-plus fa-2x pull-right" aria-hidden="true"></i>
+      </mat-card-content>
+      <mat-card-actions>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<br/>
+<mat-paginator [length]="filteredResult.length"
+[pageSize]="pageSize"
+[pageSizeOptions]="[6,9,12,15]"
+(page)="pageChange($event)">

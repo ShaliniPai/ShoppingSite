@@ -1,0 +1,97 @@
+<mat-toolbar id="mainToolbar" color="primary">
+  <mat-icon (click)="onToolbarMenuToggle()" id="toolbarMenu">subject</mat-icon>
+  <nav mat-tab-nav-bar [backgroundColor]="background" matBadgeColor="accent">
+    <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"> {{link}} </a>
+  </nav>
+  <span class="toolbar-spacer"></span>
+  <mat-icon class="search" matBadgePosition="after" matBadgeColor="accent">search</mat-icon>
+  <td style="padding-right: 40px;">
+    <mat-form-field appearance="fill">
+      <input matInput placeholder="Search" (change)="onSearchChange($event)">
+    </mat-form-field>
+  </td>
+  <mat-icon class="shopping_cart" matBadgePosition="after" matBadgeColor="accent">shopping_cart</mat-icon>
+  <mat-tab-group mat-align-tabs="end">
+    <mat-tab label="LOGIN"></mat-tab>
+  </mat-tab-group>
+</mat-toolbar>
+
+<mat-sidenav-container id="sidenavContainer" fullscreen>
+  <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
+
+    <mat-list id="menus">
+      <mat-card>
+        <mat-card-header [ngStyle]="{'visibility':isMenuOpen ? 'visible' : 'hidden'}">
+          <mat-card-title>FILTER BY</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="menu-item">
+              <mat-icon>dashboard</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description id="menuName">
+              Collection
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-action-row class="menuFont" *ngFor="let collection of collections">
+            <button mat-button (click)="filterCollection(collection)">{{collection}}</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="menu-item">
+              <mat-icon>brush</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description id="menuName">
+              Colour
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-action-row class="menuFont" *ngFor="let color of colours">
+            <button mat-button (click)="filterColor(color)">{{color}}</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title class="menu-item">
+              <mat-icon>grading</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description id="menuName">
+              Category
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-action-row class="menuFont" *ngFor="let category of categories">
+            <button mat-button (click)="filterCategory(category)">{{category}}</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <br />
+
+      <mat-list-item style="padding-left: 10px;">
+        <button class="menu-item" id="menuName" mat-flat-button>
+          <mat-icon>monetization_on</mat-icon>
+          Price Range
+        </button>
+        <br />
+      </mat-list-item>
+      <div class="row" [ngStyle]="{'visibility':isMenuOpen ? 'visible' : 'hidden'}">
+        <span style="margin-left: 30px;">0</span>
+        <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1000" min="0" max="100000"></mat-slider>100000
+      </div>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }">
+    <!-- <app-home-screen></app-home-screen> -->
+    <router-outlet></router-outlet>
+    <!-- <app-furniture-details></app-furniture-details> -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

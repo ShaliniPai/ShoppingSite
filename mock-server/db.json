@@ -1,0 +1,124 @@
+{
+  "furniture": [
+    {
+      "id": 1,
+      "name": "Coombes",
+      "collection": "Table and Chairs",
+      "category": "Living Room",
+      "price": "$2400",
+      "src": "../../assets/Images/Capture11.jpg",
+      "rating": 2,
+      "color": "Brown",
+      "reviews": "21 reviews",
+      "description": "Benchmade with certified sustainable engineered hardwood that's kiln-dried to prevent warping. Synthetic webbing suspension."
+    },
+    {
+      "id": 2,
+      "name": "Keeve Set",
+      "collection": "Shelves",
+      "category": "Bed Room",
+      "price": "$590",
+      "src": "../../assets/Images/Capture2.JPG",
+      "rating": 3,
+      "color": "Brown",
+      "reviews": "21 reviews",
+      "description": "It’s casual, it’s coastal, it’s unexpected...With its good looks and excellent craftsmanship, it's a perfect bed side table to store valuables. The rattan frame – steamed and bent into shape by hand – is accented with hand-wrapped rattan peel around the joints giving a antique look to it."
+    },
+    {
+      "id": 3,
+      "name": "Nille",
+      "collection": "Armchair",
+      "category": "Living Room",
+      "price": "$890",
+      "src": "../../assets/Images/Capture3.JPG",
+      "rating": 3,
+      "color": "White",
+      "reviews": "50 reviews",
+      "description": "It’s casual, it’s coastal, it’s unexpected...With its good looks and excellent craftsmanship, this is everything we love in a chair. The rattan frame – steamed and bent into shape by hand – is accented with hand-wrapped rattan peel around the joints and can be used with or without a cushion. A low-seat profile completes the relaxed vibe."
+    },
+    {
+      "id": 4,
+      "name": "Momo",
+      "collection": "Shelves",
+      "category": "Bed Room",
+      "price": "$450",
+      "src": "../../assets/Images/Capture4.JPG",
+      "rating": 4,
+      "color": "Brown",
+      "reviews": "30 reviews",
+      "description": "An accordion screen is a standout for so many reasons. It can define different areas in your home (a boon for open floor plans), create an intimate corner, and add a striking design element to the room. Here, three caned panels are edged in hand-wrapped in rattan to achieve gorgeous texture and tone. Brass end caps on the feet add an elevating finishing touch."
+    },
+    {
+      "id": 5,
+      "name": "Penemille",
+      "collection": "Table and Chairs",
+      "category": "Living Room",
+      "price": "$650",
+      "src": "../../assets/Images/Capture5.JPG",
+      "rating": 4,
+      "color": "White",
+      "reviews": "30 reviews",
+      "description": "Tight back seat is high-resilience topped with an extra layer of comfort. Self-welt detailing. Made in North Carolina, USA of domestic and imported materials."
+    },
+    {
+      "id": 6,
+      "name": "Kappu",
+      "collection": "Shelves",
+      "category": "Bed Room",
+      "price": "$950",
+      "src": "../../assets/Images/Capture6.JPG",
+      "rating": 4,
+      "color": "Brown",
+      "reviews": "3 reviews",
+      "description": "Reese has all the thoughtful details of a well-designed piece. We started with a sturdy oak frame and gave it extra character with Asian-inspired legs and a cerused finish. Next, we added a roomy storage drawer and a pull-out shelf that can serve as a mini bar when guests arrive. Your very own curation would make this all the more special – your favorite books, your favorite mementos."
+    },
+    {
+      "id": 7,
+      "name": "Coombes",
+      "collection": "Chairs",
+      "category": "Living Room",
+      "price": "$2400",
+      "src": "../../assets/Images/Capture1.JPG",
+      "rating": 2,
+      "color": "Brown",
+      "reviews": "21 reviews",
+      "description": "Benchmade with certified sustainable engineered hardwood that's kiln-dried to prevent warping. Synthetic webbing suspension"
+    },
+    {
+      "id": 8,
+      "name": "Nasdac Set",
+      "collection": "Shelves",
+      "category": "Bed Room",
+      "price": "$690",
+      "src": "../../assets/Images/Capture44.jpg",
+      "rating": 3,
+      "color": "Brown",
+      "reviews": "21 reviews",
+      "description": "It’s casual, it’s coastal, it’s unexpected...With its good looks and excellent craftsmanship, this is everything we love in a chair. The rattan frame – steamed and bent into shape by hand – is accented with hand-wrapped rattan peel around the joints and can be used with or without a cushion. A low-seat profile completes the relaxed vibe."
+    },
+    {
+      "id": 9,
+      "name": "Zueese Set",
+      "collection": "Table and Chairs",
+      "category": "Bed Room",
+      "price": "$600",
+      "src": "../../assets/Images/Capture22.jpg",
+      "rating": 3,
+      "color": "Brown",
+      "reviews": "31 reviews",
+      "description": "It’s casual, it’s coastal, it’s unexpected...With its good looks and excellent craftsmanship, this is everything we love in a table and chair. The rattan frame – steamed and bent into shape by hand – is accented with hand-wrapped rattan peel around the joints and can be used with or without a cushion. A low-seat profile completes the relaxed vibe."
+    },
+    {
+      "id": 10,
+      "name": "Ross Seat",
+      "collection": "Chairs",
+      "category": "Living Room",
+      "price": "$700",
+      "src": "../../assets/Images/Capture33.jpg",
+      "rating": 3,
+      "color": "White",
+      "reviews": "40 reviews",
+      "description": "It’s casual, it’s coastal, it’s unexpected...With its good looks and excellent craftsmanship, this is everything we love in a chair. The rattan frame – steamed and bent into shape by hand – is accented with hand-wrapped rattan peel around the joints and can be used with or without a cushion. A low-seat profile completes the relaxed vibe."
+    }
+  ]
+}
