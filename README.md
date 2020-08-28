@@ -11,6 +11,9 @@ Run `npm install node-sass`
 ## If faced with angular-devkit builder issue then follow the next step
 Install `npm i @angular-devkit/build-angular`
 
+## If faced with any AngularGettingStarted issues
+Run `npm install` once again
+
 ## Setting up the mock server and Third and Final Step
 Open the mock-server folder in an IDE and run `npm install` and execute `npm start` to start the server.
 
